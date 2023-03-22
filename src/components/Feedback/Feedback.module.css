@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    gap: 5px;
+}
+
+.feedbackButton {
+    border-radius: 5px;
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.feedbackButton:hover{
+  background-color: bisque;  
+}

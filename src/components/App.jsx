@@ -1,7 +1,7 @@
+import { Statistics } from "./Feedback/Feedback";
+
 export const App = () => {
   return (
-    <div>
-start
-    </div>
+<Statistics/>
   );
 };
