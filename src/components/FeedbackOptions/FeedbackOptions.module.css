@@ -10,6 +10,10 @@
     cursor: pointer;
 }
 
+.feedbackButton::first-letter {
+    text-transform:capitalize;
+}
+
 .feedbackButton:hover{
   background-color: bisque;  
 }
