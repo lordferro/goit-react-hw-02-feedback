@@ -5,7 +5,7 @@ export const Statistics = ({
   good,
   bad,
   neutral,
-  total = 0,
+  total,
   positivePercentage,
 }) => {
   const statisticMarkup = (
@@ -16,7 +16,7 @@ export const Statistics = ({
       <p>Total: {total()}</p>
       <p>
         Positive feedback:{' '}
-        {isNaN(positivePercentage()) ? 0 : positivePercentage() + '%'}
+        {positivePercentage() + '%'}
       </p>
     </div>
   );
