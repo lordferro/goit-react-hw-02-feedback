@@ -28,6 +28,7 @@ export class App extends Component {
     const { good, neutral, bad } = this.state;
     const optionsKeys = Object.keys(this.state);
     const total = this.calcTotal();
+    const positivePercentage = this.positivePercentage()
     return (
       <Section title={'Please leave feedback'}>
         <FeedbackOptions
@@ -40,8 +41,8 @@ export class App extends Component {
             good={good}
             neutral={neutral}
             bad={bad}
-            total={this.calcTotal}
-            positivePercentage={this.positivePercentage}
+            total={total}
+            positivePercentage={positivePercentage}
           ></Statistics>
         ) : (
           <Notification message={'There is no feedback'} />
